@@ -1,0 +1,6 @@
+<h1>Appointment#show</h1>
+<p>Find me in app/views/appointment/show.html.erb</p>
+
+<p><%=link_to @appointment.doctor.name, @appointment.doctor%></p>
+<p><%=link_to @appointment.patient.name, @appointment.patient%></p>
+<p><%=@appointment.appointment_datetime.to_formatted_s(:long_ordinal)%></p>
